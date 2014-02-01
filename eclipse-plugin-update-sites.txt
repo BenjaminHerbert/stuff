@@ -1,0 +1,7 @@
+Plugins for Eclipse Kepler
+==========================
+
+- MoreUnit - http://moreunit.sourceforge.net/
+- EclEmma - Code Coverage - http://update.eclemma.org/
+- Eclipse Color Theme - http://eclipse-color-theme.github.io/update/
+- FindBugs - http://findbugs.cs.umd.edu/eclipse
