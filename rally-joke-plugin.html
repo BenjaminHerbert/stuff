@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- Use at your own risk, this makes an ajax call to a external json, should be safe ... but you never know -->
+<!-- NOTE: you have to visit the joke url and create an SSL exception -->
+<html>
+<head>
+    <title>Chuck Norris Joke</title>
+    <meta name="Name" content="Chuck Norris Joke"/>
+    <meta name="Version" content="2014.02.07"/>
+    <meta name="Author" content="Benjamin Herbert"/>
+     
+    <script type="text/javascript" src="/apps/2.0rc1/sdk.js"></script>
+    <script type="text/javascript">
+      function updateJoke() {
+	Ext.data.JsonP.request({
+	  loadMask: true,
+	  url:"https://api.icndb.com/jokes/random",  // json that contains the joke
+	  success: function(json, request) {
+	    // update the div with the joke text
+	    Ext.fly('joke').update(json.value.joke);
+	  }
+	});
+      }
+      updateJoke();
+    </script>
+</head>
+<body style="font-size: 10pt; font-family: NotoSans, Helvetica, Arial;">
+  <div style="color: blue;" onclick="updateJoke();" >Click to Update</div>
+  <br>
+  <div id="joke" style="height:225px; width:450px"></div>
+</body>
+</html>
