@@ -5,3 +5,7 @@ Plugins for Eclipse Kepler
 - EclEmma - Code Coverage - http://update.eclemma.org/
 - Eclipse Color Theme - http://eclipse-color-theme.github.io/update/
 - FindBugs - http://findbugs.cs.umd.edu/eclipse
+- Open extern - http://openextern.googlecode.com/svn/trunk/openextern_update/
+- PMD - http://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/
+- checkstyle - http://eclipse-cs.sf.net/update/
+
